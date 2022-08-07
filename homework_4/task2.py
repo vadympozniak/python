@@ -4,9 +4,9 @@ the string contains only numerical characters and is only 10 characters long.
 Print a suitable message depending on the outcome of the string evaluation."""
 
 
-phone_number = input("Enter your phone number:")
+phone_number = input('Enter your phone number:')
 
 if len(phone_number) == 10 and phone_number.isdigit():
-    print("Correct number")
+    print('Correct number')
 else:
-    print("Incorrect number")
+    print('Incorrect number')

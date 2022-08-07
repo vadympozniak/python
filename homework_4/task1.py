@@ -9,9 +9,9 @@ Sample String: 'x'
 Expected Result: Empty String"""
 
 
-word = input("Hello! Write the word:")
+word = input('Hello! Write the word:')
 
 if len(word) < 2:
-    print("Empty String")
+    print('Empty String')
 else:
     print(word[0:2] + word[-2:])
