@@ -10,3 +10,4 @@ if len(phone_number) == 10 and phone_number.isdigit():
     print('Correct number')
 else:
     print('Incorrect number')
+

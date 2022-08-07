@@ -16,3 +16,4 @@ print('Multiplication:', number1 * number2)
 print('Exponent (Power):', number1 % number2)
 print('Modulus:', number1 ** number2)
 
+

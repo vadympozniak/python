@@ -9,3 +9,4 @@ if answer == '12':
     print('Right')
 else:
     print('Wrong')
+
