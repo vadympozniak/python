@@ -22,3 +22,4 @@ while len(collect_words) < 5:
         collect_words.append(one_word)
 
 print(collect_words)
+

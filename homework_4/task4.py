@@ -10,3 +10,4 @@ if name == name_check.lower():
     print(True)
 else:
     print(False)
+
