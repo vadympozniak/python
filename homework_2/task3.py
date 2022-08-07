@@ -15,5 +15,6 @@
 Pay attention that usage of spaces is forbidden, as well as creating the whole result 
 text string using """ """, use '\n' and '\t' symbols instead."""
 
+
 print('#########\n#\t#\n#\t#\n#\t#\n#########\n\n#\t#\n#\t#\n#########\n#\t#\n#\t#\n')
 

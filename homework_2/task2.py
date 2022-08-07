@@ -4,11 +4,7 @@ Also, provide a comment text above each print statement, mentioned above,
 with the expected output after execution of the particular print statement."""
 
 
-#hello, Academy
 print('hello', 'Academy', sep=',')
-#o__o
 print('o', 'o', sep='__')
-#hello, Academy!
 print('hello', 'Academy', sep=',', end='!\n')
-#1...2...3
 print(1, 2, 3, sep='...')
