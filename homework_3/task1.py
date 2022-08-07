@@ -12,5 +12,6 @@ import calendar
 
 day = date.today()
 name = 'Vadym'
+
 print(f'Good day {name}! {calendar.day_name[day.weekday()]} is a perfect day to learn some python.')
 

@@ -4,7 +4,9 @@ from characters of the input string.
 For example, the program obtained the word ‘hello’, so it should print 5 random strings(words)
 that combine characters """
 
+
 import random
+
 
 word = input('Enter a word with more than 5 letters:')
 
@@ -12,7 +14,6 @@ while len(word) < 5:
     word = input('Please, Enter a word with more than 5 letters:')
 
 word_list = list(word.lower())
-
 collect_words = []
 
 while len(collect_words) < 5:

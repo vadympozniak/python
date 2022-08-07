@@ -4,10 +4,12 @@ Write a program that takes your name as input, and then your age as input and gr
 
 
 name = input('Enter your name:')
+
 while not name.isalpha():
     name = input('Name is incorrect.Enter your name:')
 
 age = input('Enter your age:')
+
 while not age.isdigit() or int(age) < 0:
     age = input('Age is incorrect.Enter your age:')
 

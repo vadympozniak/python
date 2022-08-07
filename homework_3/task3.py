@@ -9,11 +9,17 @@ Floor division"""
 
 number1 = 11
 number2 = 4
+
 print('Addition:', number1 + number2)
+
 print('Subtraction:', number1 - number2)
+
 print('Division:', number1 / number2)
+
 print('Multiplication:', number1 * number2)
+
 print('Exponent (Power):', number1 % number2)
+
 print('Modulus:', number1 ** number2)
 
 
