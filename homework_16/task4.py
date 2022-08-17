@@ -23,7 +23,8 @@ class CustomException(Exception):
                 with open('logs.txt', 'a') as file:
                     file.write(f'{str(err_message)} \n')
             except PermissionError:
-                print('The fileis write-protected.')
+                print('The file is write-protected.')
 
 
-my_file = CustomException('Custom')
+if __name__ == '__main__':
+    my_file = CustomException(1)

@@ -7,9 +7,9 @@ What if you add a different directory path to the filename passed to open?
 Note: file write methods do not add newline characters to your strings; add an explicit ‘\n’ at the end
 of the string if you want to fully terminate the line in the file."""
 
-
-try:
-    with open('myfile.txt', 'w') as file:
-        file.write('Hello file world!')
-except PermissionError:
-    print('File is not available')
+if __name__ == '__main__':
+    try:
+        with open('myfile.txt', 'w') as file:
+            file.write('Hello file world!')
+    except PermissionError:
+        print('File is not available')

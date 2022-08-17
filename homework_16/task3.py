@@ -109,20 +109,16 @@ class ProductStore(Product):
         return product_info
 
 
-product_1 = Product('Drink', 'Cola', 100)
-product_2 = Product('Food', 'Salad', 1)
-
-
-store = ProductStore()
-
-store.add(product_1, 10)
-store.add(product_2, 300)
-
-store.set_discount('Food', 20, 'type')
-store.sell_product('Salad', 10)
-store.sell_product('Salad', 300)
-store.sell_product('Salad', 20)
-
-print(f'Profit — {store.get_income()} UAH.')
-print(f'All products: {store.get_all_products()}.')
-print(f"Information about product balances: {store.get_product_info('Salad')}")
+if __name__ == '__main__':
+    product_1 = Product('Drink', 'Cola', 15)
+    product_2 = Product('Food', 'Salad', 100)
+    store = ProductStore()
+    store.add(product_1, 10)
+    store.add(product_2, 300)
+    store.set_discount('Food', 20, 'type')
+    store.sell_product('Salad', 10)
+    store.sell_product('Salad', 300)
+    store.sell_product('Salad', 20)
+    print(f'Profit — {store.get_income()} UAH.')
+    print(f'All products: {store.get_all_products()}.')
+    print(f"Information about product balances: {store.get_product_info('Salad')}")

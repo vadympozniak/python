@@ -71,12 +71,13 @@ class TVController:
 
 controller = TVController(CHANNELS)
 
-print(f'Channels: {controller.channels}')
-print(f'First channel: {controller.first_channel()}')
-print(f'Last channel: {controller.last_channel()}')
-print(f"Turn channel: {controller.turn_channel('3')}")
-print(f'Next channel: {controller.next_channel()}')
-print(f'Previous channel: {controller.previous_channel()}')
-print(f'Current channel: {controller.current_channel()}')
-print(f"Channel is exist(num) {controller.is_exist('4')}")
-print(f"Channel is exist (name): {controller.is_exist('BBC / #1 / [0]')}")
+if __name__ == '__main__':
+    print(f'Channels: {controller.channels}')
+    print(f'First channel: {controller.first_channel()}')
+    print(f'Last channel: {controller.last_channel()}')
+    print(f"Turn channel: {controller.turn_channel('3')}")
+    print(f'Next channel: {controller.next_channel()}')
+    print(f'Previous channel: {controller.previous_channel()}')
+    print(f'Current channel: {controller.current_channel()}')
+    print(f"Channel is exist(num) {controller.is_exist('4')}")
+    print(f"Channel is exist (name): {controller.is_exist('BBC / #1 / [0]')}")

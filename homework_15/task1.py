@@ -18,5 +18,6 @@ class Person:
             print('Age is not number.')
 
 
-man = Person('Carl', 'Johnson', 26)
-man.talk()
+if __name__ == '__main__':
+    man = Person('Carl', 'Johnson', 26)
+    man.talk()

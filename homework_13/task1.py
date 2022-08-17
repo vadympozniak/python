@@ -11,4 +11,5 @@ def function():
         list_variables.append(i)
 
 
-print(f'Number of local variables — {function.__code__.co_nlocals}.')
+if __name__ == '__main__':
+    print(f'Number of local variables — {function.__code__.co_nlocals}.')

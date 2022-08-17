@@ -92,25 +92,20 @@ class Library(Book):
         return self.__str__()
 
 
-our_library = Library('Library')
-
-author_1 = Author('Serhiy Zhadan', 'Ukraine', '23.08.1974', [])
-author_2 = Author('Yuval Noah Harari', 'Israel', '24.02.1976', [])
-
-book_1 = Book('Месопотамія', '2014', author_1)
-book_2 = Book('Тамплієри', '2016', author_1)
-book_3 = Book('Sapiens: A Brief History of Humankind', '2014', author_2)
-book_4 = Book('Homo Deus: A Brief History of Tomorrow ', '2016', author_2)
-
-our_library.new_book(book_1)
-our_library.new_book(book_2)
-our_library.new_book(book_3)
-our_library.new_book(book_4)
-
-our_library.group_by_author(author_1)
-our_library.group_by_author(author_2)
-
-our_library.group_by_year('2014')
-our_library.group_by_year('2016')
-
-print(our_library.__str__())
+if __name__ == '__main__':
+    our_library = Library('Library')
+    author_1 = Author('Serhiy Zhadan', 'Ukraine', '23.08.1974', [])
+    author_2 = Author('Yuval Noah Harari', 'Israel', '24.02.1976', [])
+    book_1 = Book('Месопотамія', '2014', author_1)
+    book_2 = Book('Тамплієри', '2016', author_1)
+    book_3 = Book('Sapiens: A Brief History of Humankind', '2014', author_2)
+    book_4 = Book('Homo Deus: A Brief History of Tomorrow ', '2016', author_2)
+    our_library.new_book(book_1)
+    our_library.new_book(book_2)
+    our_library.new_book(book_3)
+    our_library.new_book(book_4)
+    our_library.group_by_author(author_1)
+    our_library.group_by_author(author_2)
+    our_library.group_by_year('2014')
+    our_library.group_by_year('2016')
+    print(our_library.__str__())

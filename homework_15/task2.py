@@ -16,5 +16,6 @@ class Dog:
             print('Enter dog age as a number.')
 
 
-my_dog = Dog('3')
-print(my_dog.human_age())
+if __name__ == '__main__':
+    my_dog = Dog('3')
+    print(my_dog.human_age())

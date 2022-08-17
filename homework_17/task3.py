@@ -114,10 +114,10 @@ class Fraction:
         return self.__str__()
 
 
-x = Fraction('1/3')
-y = Fraction('1/2')
-
-print(x + y)
-print(x - y)
-print(x * y)
-print(x / y)
+if __name__ == '__main__':
+    x = Fraction('1/3')
+    y = Fraction('1/2')
+    print(x + y)
+    print(x - y)
+    print(x * y)
+    print(x / y)

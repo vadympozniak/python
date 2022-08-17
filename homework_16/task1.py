@@ -91,7 +91,7 @@ class Student(Person):
     def id_for_student(self):
         return f'Full name {self.first_name} {self.last_first_name}. Age: {self.age}. ' \
                f'City: {self.city}. Education: {self.education}. Martial status: {self.marital_status}. ' \
-               f'Курс: {self.course}. Group {self.group}. ' \
+               f'Course: {self.course}. Group {self.group}. ' \
                f'Scholarship: {self.scholarship}. Amount Scholarship {self.amount_scholarship} UAH.'
 
     def scholarship_for_year(self):
@@ -105,23 +105,19 @@ class Student(Person):
 
 
 principal_1 = SchoolPrincipal('Dmytro', 'Vyshneveckiy', 55, 'Dnipro', 'Bachelor ', 'married.', 26, 15, 16500)
-print(principal_1.id_for_school_principal())
-print(principal_1.salary_for_year())
-
-headmaster_1 = SchoolHeadmaster('Diana', 'Taran', 42, 'Chernihiv', 'Bachelor', 'married', 17, 'science',
-                                12500)
-print(headmaster_1.id_for_school_headmaster())
-print(headmaster_1.salary_for_year())
-
-caretaker_1 = Caretaker('Oleg', 'Dmytrenko', 33, 'Kyiv', 'Secondary school',
-                        'married', 17, 9500, 'weekday')
-print(caretaker_1.id_for_school_worker())
-print(caretaker_1.salary_for_year())
-
+headmaster_1 = SchoolHeadmaster('Diana', 'Taran', 42, 'Chernihiv', 'Bachelor', 'married', 17, 'science', 12500)
+caretaker_1 = Caretaker('Oleg', 'Dmytrenko', 33, 'Kyiv', 'Secondary school', 'married', 17, 9500, 'weekday')
 teacher_1 = Teacher('Volodymyr', 'Ivanchenko', 27, 'Kyiv', 'Bachelor', 'unmarried', 2, 8, 8500)
-print(teacher_1.id_for_school_teacher())
-print(teacher_1.salary_for_year())
-
 student_1 = Student('Olena', 'Krot', 19, 'Lviv', 'Secondary school', 'unmarried', 1, 'B', True, 2000)
-print(student_1.id_for_student())
-print(student_1.scholarship_for_year())
+
+if __name__ == '__main__':
+    print(principal_1.id_for_school_principal())
+    print(principal_1.salary_for_year())
+    print(headmaster_1.id_for_school_headmaster())
+    print(headmaster_1.salary_for_year())
+    print(caretaker_1.id_for_school_worker())
+    print(caretaker_1.salary_for_year())
+    print(teacher_1.id_for_school_teacher())
+    print(teacher_1.salary_for_year())
+    print(student_1.id_for_student())
+    print(student_1.scholarship_for_year())

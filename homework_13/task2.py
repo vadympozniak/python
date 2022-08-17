@@ -13,4 +13,5 @@ def square(b):
 
 result = square(number)
 
-print(result(100))
+if __name__ == '__main__':
+    print(result(100))

@@ -30,12 +30,10 @@ class YourDogTalk(Dog):
         sound = input('Enter your animal sound: ')
         print(f'Your animal sound: {sound}')
 
-
-my_cat = Cat()
-my_cat.talk()
-
-my_dog = Dog()
-my_dog.talk()
-
-my_dog = YourDogTalk()
-my_dog.talk()
+if __name__ == '__main__':
+    my_cat = Cat()
+    my_cat.talk()
+    my_dog = Dog()
+    my_dog.talk()
+    my_dog = YourDogTalk()
+    my_dog.talk()

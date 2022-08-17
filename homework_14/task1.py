@@ -19,6 +19,8 @@ def square_all(*args):
 
 
 add_1 = add(4, 5)
-print(add_1)
 square_all_1 = square_all(1, 2, 3)
-print(square_all_1)
+
+if __name__ == '__main__':
+    print(add_1)
+    print(square_all_1)

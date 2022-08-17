@@ -25,4 +25,6 @@ def choose_func(nums, func1, func2):
 
 
 list1 = [random.randint(-10, 10) for i in range(5)]
-print(choose_func(list1, square_nums, remove_negatives))
+
+if __name__ == '__main__':
+    print(choose_func(list1, square_nums, remove_negatives))
